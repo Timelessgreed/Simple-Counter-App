@@ -1,0 +1,87 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --primary-hsl-light: 200, 100%, 91%;
+    --primary-hsl: 200, 100%, 50%;
+    --primary-hsl-dark: 200, 100%, 6%;
+}
+body {
+    margin: 0;
+}
+.whole-container{
+    background-image: url(img/new5.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(25, 255, 255);
+}
+
+.container{
+    --color: hsl(var(--primary-hsl-dark),.7);
+    background-color:var(--color);
+    box-shadow: 0 0 15px 0 var(--color);
+    padding: 40px 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#increment-btn {
+    background: rgb(199, 0, 33);
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#increment-btn:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+}
+#save-btn{
+    background: rgb(0, 160, 99);
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#save-btn:hover{
+    background-color: rgb(0, 226, 151);
+    color: rgb(0, 0, 0);
+}
+p{
+    font-size: 30px;
+    font-weight: bold;
+}
